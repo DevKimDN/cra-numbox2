@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=KoHo:wght@300;500&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right top , #3498db, #2882be);
+  height: 100vh;
+  margin: 0;
+  font-family: 'KoHo';
+
+
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  height: 300px;
+  width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px #23618a;
+}
+
+.number{
+ font-size: 80px ;
+ color: #3498db;
+ margin: 20px;
+}
+
+.BoxUpdateNumber {
+
+  display: flex;
+  flex-direction: column;
+
+}
+.input{
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  border: none;
+  padding: 10px;
+  outline: none;
+  font-size: 20px;
+  color: #2978ad;
+  text-align: center;
+}
+.submit{
+
+  background-color: #3498db;
+  padding: 8px 30px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  /* letter-spacing: -0.5px; */
+}
+
