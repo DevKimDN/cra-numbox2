@@ -4,16 +4,25 @@ import '../styles/App.css';
 export default class BoxUpdateNumber extends PureComponent {
 
     updateNumber = async function() {
+       
+      try {
         const response = await axios.put('https://server-02-devkim.herokuapp.com/60a6666fbdb08120a8071cb5',{
-                "value" : parseInt(document.getElementById("inputBox").value)
-              })
-              .then(function (response) {
-                console.log(response);
-              })
-              .catch(function (error) {
-                console.log(error);
-              });
-        }
+                "value" : parseInt(document.getElementById("inputBox").value) });
+              console.log(response.data.message);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+      // const response = await axios.put('https://server-02-devkim.herokuapp.com/60a6666fbdb08120a8071cb5',{
+      //           "value" : parseInt(document.getElementById("inputBox").value)
+      //         })
+      //         .then(function (response) {
+      //           console.log(response);
+      //         })
+      //         .catch(function (error) {
+      //           console.log(error);
+      //         });
+      //   }
     
 
     render() {
