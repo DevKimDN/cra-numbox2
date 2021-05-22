@@ -14,7 +14,7 @@ export default class NumberBox extends PureComponent {
     }
     getNumber =  async function(){      
         try {
-          const response = await axios.get('http://server-02-devkim.herokuapp.com/60a6666fbdb08120a8071cb5');
+          const response = await axios.get('https://server-02-devkim.herokuapp.com/60a6666fbdb08120a8071cb5');
           const  value = response.data.data.numX.value;
           this.setState({number : value});
 
