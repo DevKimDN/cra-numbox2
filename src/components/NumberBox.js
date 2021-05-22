@@ -9,7 +9,7 @@ export default class NumberBox extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
-            number : 1
+            number : 0
         };
     }
     getNumber =  async function(){      
@@ -23,6 +23,11 @@ export default class NumberBox extends PureComponent {
         }
       };
 
+
+componentDidMount(){
+this.getNumber();
+
+}
 
     render() {
         return (
