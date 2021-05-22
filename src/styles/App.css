@@ -9,6 +9,12 @@ body {
   margin: 0;
   font-family: 'KoHo';
 }
+
+input{
+border: none;
+outline: none;
+font-family: "KoHo"
+}
 .App {
   display: flex;
   flex-direction: column;
@@ -42,13 +48,10 @@ body {
   flex-direction: column;
 
 }
-.input{
-
+.inputText{
   background-color: #f1f1f1;
   margin-bottom: 10px;
-  border: none;
   padding: 10px;
-  outline: none;
   font-family: 'KoHo';
   font-size: 20px;
   color: #2978ad;
@@ -61,9 +64,5 @@ body {
   color: #fff;
   cursor: pointer;
   font-size: 18px;
-  border: none;
-  outline: none;
-  font-family: 'KoHo';
-  /* letter-spacing: -0.5px; */
 }
 

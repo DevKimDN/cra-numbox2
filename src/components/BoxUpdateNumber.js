@@ -5,7 +5,7 @@ export default class BoxUpdateNumber extends PureComponent {
         return (
             <div className= "BoxUpdateNumber">
               
-              <input type="text"  className= "input"/>
+              <input type="text"  className= "inputText"/>
               
               <input className= "submit" type="submit" value="Put to mongodb" />
             
